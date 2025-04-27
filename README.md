@@ -26,6 +26,7 @@ Email format verification
 
 
 2. ApexPlanet Tech - Responsive Tech Layout
+   
 ![Screenshot 2025-04-27 143442](https://github.com/user-attachments/assets/625857b8-d2df-4b12-be07-9f0ff3785dd5)
 
 
@@ -56,7 +57,8 @@ Mobile-first breakpoints
 
 
 
-2. My Sweet Gallery - Image Upload Portal
+3. My Sweet Gallery - Image Upload Portal
+   
 ![image](https://github.com/user-attachments/assets/f30ca692-404f-4603-952e-0e5044588c67)
 
 
