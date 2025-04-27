@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cute Gallery ✨</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>🌸 My Sweet Gallery</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*" multiple>
+            <button id="uploadBtn">Upload Magic ✨</button>
+        </div>
+        
+        <div class="filter-controls">
+            <input type="text" id="searchInput" placeholder="Search your memories...">
+            <select id="sortSelect">
+                <option value="date-asc">Oldest First</option>
+                <option value="date-desc">Newest First</option>
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+            </select>
+        </div>
+        
+        <div id="galleryGrid" class="gallery-grid"></div>
+        
+        <div class="modal" id="imageModal">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div class="caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>

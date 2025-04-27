@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AppexPlanet</title>
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <img src="https://www.callcentrehelper.com/images/stories/2014/01/call-centre-floor-760.jpg" alt="AppexPlanet Logo" class="logo">
+            <h1>Contact Our Team</h1>
+            <p>We'll get back to you within 24 hours</p>
+        </div>
+        <style>
+            .logo {
+              width: 200px; /* Adjust width as you like */
+              height: auto; /* Maintain correct proportions */
+              max-width: 100%; /* Responsive */
+              display: block;
+              margin: 20px auto; /* Center it and add some space */
+              border-radius: 8px; /* Optional: rounded corners */
+            }
+        </style>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">
+                    <i class="fas fa-user"></i> Full Name
+                </label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> Email Address
+                </label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">
+                    <i class="fas fa-phone"></i> Phone Number (Optional)
+                </label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 123 456 7890">
+            </div>
+            
+            <div class="form-group">
+                <label for="department">
+                    <i class="fas fa-building"></i> Department
+                </label>
+                <select id="department" name="department">
+                    <option value="">Select a department</option>
+                    <option value="sales">Sales</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">
+                    <i class="fas fa-comment"></i> Your Message
+                </label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe" checked>
+                <label for="subscribe">Subscribe to our newsletter</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+        
+        <div id="submissionsPanel" class="submissions-panel">
+            <h3>Recent Submissions <span id="submissionCount">(0)</span></h3>
+            <button id="toggleSubmissions" class="view-btn">
+                <i class="fas fa-eye"></i> View Submissions
+            </button>
+            <div id="submissionsList" class="submissions-list"></div>
+        </div>
+    </div>
+    
+    <script src="contact-script.js"></script>
+</body>
+</html>
